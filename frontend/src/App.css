@@ -1,0 +1,207 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #5f87ff, #4c63d2);
+  min-height: 100vh;
+}
+
+/* Center Containers (Login / Signup / Create etc) */
+.auth-container,
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cards (Reusable) */
+.auth-card,
+.card {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Bigger card (Create Page etc) */
+.card.large {
+  width: 500px;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #2f3640;
+}
+
+/* Inputs */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #4c63d2;
+  box-shadow: 0 0 5px rgba(76, 99, 210, 0.4);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #273c75;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #40739e;
+}
+
+/* Links / Bottom Text */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+span {
+  color: #4c63d2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Event Card */
+.event-card {
+  background: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.event-card h3 {
+  color: #2f3640;
+  margin-bottom: 5px;
+}
+
+.event-card p {
+  color: #555;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* Small Buttons Inside Cards */
+.event-card button {
+  margin-top: 8px;
+  font-size: 13px;
+  padding: 8px;
+}
+
+/* Badge Base */
+.badge {
+  margin-left: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Approval Mode Badges */
+.badge.auto {
+  background: #2ecc71;
+}
+
+.badge.manual {
+  background: #f39c12;
+}
+
+/* Registration Status Badges */
+.badge.approved {
+  background: #27ae60;
+}
+
+.badge.pending {
+  background: #e67e22;
+}
+
+.badge.rejected {
+  background: #e74c3c;
+}
+
+/* Registration Card */
+.registration-card {
+  background: white;
+  width: 400px;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.registration-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Approve / Reject Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.actions button {
+  flex: 1;
+  font-size: 13px;
+  padding: 8px;
+}
+
+.actions .approve {
+  background: #2ecc71;
+}
+
+.actions .reject {
+  background: #e74c3c;
+}
+
+.actions .approve:hover {
+  background: #27ae60;
+}
+
+.actions .reject:hover {
+  background: #c0392b;
+}
